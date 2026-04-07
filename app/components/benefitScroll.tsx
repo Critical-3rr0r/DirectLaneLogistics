@@ -11,9 +11,13 @@ export default function InfiniteScroll({ items }: { items: string[] }) {
 
     let animationFrame: number;
     let scroll = 0;
+    let speed = 0
+    if(window.innerWidth < 1000){
 
-    const speed = 0.45; // pixels per frame, adjust for speed
-
+      speed = 1.0;
+    }else{
+      speed = 0.45;
+    }
     const animate = () => {
       scroll += speed;
       if (scroll >= container.scrollWidth / 2) scroll = 0; // loop

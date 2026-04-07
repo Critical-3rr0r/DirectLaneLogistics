@@ -7,7 +7,7 @@ export default function TrustCTA(){
         el?.scrollIntoView({behavior: "smooth"})
     }
     return(
-        <div className="bg-slate-400/50 dark:bg-slate-950 w-250 p-10 justify-self-center flex flex-col gap-15 rounded-2xl border-2 border-orange-600">
+        <div className="bg-slate-400/50 dark:bg-slate-950 w-screen md:w-250 p-10 justify-self-center flex flex-col gap-15 rounded-2xl border-2 border-orange-600">
             <div className="flex flex-col gap-5 text-3xl items-center text-center">
                 <h2 className="text-4xl">DirectLane Logistics is serving the steel freight industry with specialized flatbad dispatch services</h2>
                 <h3>Join DirectLane Logistics today and start hauling better paying flatbad freight today!</h3>

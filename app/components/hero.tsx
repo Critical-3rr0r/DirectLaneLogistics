@@ -39,14 +39,14 @@ export default function Hero(){
     }
     return(
       <div className="flex flex-col items-center h-full">
-        <div className="flex flex-row gap-2 overflow-hidden w-full justify-center">
-            <motion.h1 initial={{x: -1000}} animate={{x: 0}} transition={{duration: .5}} className="text-6xl font-bold">Flatbed <span className="text-orange-600">Dispatch</span></motion.h1>
-            <motion.h1 initial={{x: 1000}} animate={{x: 0}} transition={{duration: 1.5, delay: .75}} className="text-6xl font-bold">Built for <span className="text-orange-600">Steel Haulers</span></motion.h1>
+        <div className="flex flex-col md:flex-row gap-2 overflow-hidden w-full justify-center">
+            <motion.h1 initial={{x: -1000}} animate={{x: 0}} transition={{duration: .5}} className="text-3xl text-center md:text-6xl font-bold">Flatbed <span className="text-orange-600">Dispatch</span></motion.h1>
+            <motion.h1 initial={{x: 1000}} animate={{x: 0}} transition={{duration: 1.5, delay: .75}} className="text-3xl text-center md:text-6xl font-bold">Built for <span className="text-orange-600">Steel Haulers</span></motion.h1>
         </div>
         
-        <motion.p className="text-3xl mt-5" initial={{opacity: 0}} animate={{opacity: 100}} transition={{duration: .75, delay: 1.5, ease: "easeInOut"}}>Secure <span className="underline font-bold text-orange-600">high paying loads</span> and <span className="underline font-bold text-orange-600">consistent lanes</span></motion.p>
+        <motion.p className="text-3xl text-center mt-5" initial={{opacity: 0}} animate={{opacity: 100}} transition={{duration: .75, delay: 1.5, ease: "easeInOut"}}>Secure <span className="underline font-bold text-orange-600">high paying loads</span> and <span className="underline font-bold text-orange-600">consistent lanes</span></motion.p>
 
-        <motion.form id="signup-form" onSubmit={(e) => {e.preventDefault(); sendEmail()}} className="mt-10 bg-slate-400/50 dark:bg-gray-950 w-200 flex flex-col gap-2 text-xl items-center pt-5 pb-5 shadow-lg shadow-orange-800/25 rounded-lg border-1 border-orange-600" initial={{opacity: 0}} animate={{opacity: 100}} transition={{duration: .75, delay: 2}}>
+        <motion.form id="signup-form" onSubmit={(e) => {e.preventDefault(); sendEmail()}} className="mt-10 bg-slate-400/50 dark:bg-gray-950 w-screen md:w-200 flex flex-col gap-2 text-xl items-center pt-5 pb-5 shadow-lg shadow-orange-800/25 rounded-lg border-1 border-orange-600" initial={{opacity: 0}} animate={{opacity: 100}} transition={{duration: .75, delay: 2}}>
             <h2 className="text-4xl">Get Started <span className="text-orange-600 font-bold underline">Today!</span></h2>
             <label htmlFor="name" className="text-2xl" >Name</label>
             <input name="name" type="text" placeholder="John Doe" className="text-center" onChange={(e) => setName(e.target.value)}></input>

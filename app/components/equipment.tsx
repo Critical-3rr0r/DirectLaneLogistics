@@ -6,10 +6,10 @@ interface EquipmentProps{
 
 export default function EquipmentAndFreight({equipment, freight}: EquipmentProps){
     return(
-        <div className="flex flex-col md:lex-row gap-10 md:gap-75 justify-center mt-5 md:mt-0 md:p-10 text-3xl">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-75 justify-center mt-5 md:mt-0 md:p-10 text-2xl md:text-3xl">
             <div className="flex flex-col gap-10 w-screen md:w-125 items-center bg-slate-400/50 dark:bg-slate-950 p-10 rounded-lg shadow-lg shadow-orange-800/50 border-2 border-orange-600/75">
                 <h3 className="text-5xl underline text-orange-600">Equipment</h3>
-                <ul className="self-start list-disc pl-10">
+                <ul className="self-start list-disc p-0 md:pl-10">
                     {equipment.map((item, index) => {
                         return(
                             <li key={index}>{item}</li>
@@ -19,7 +19,7 @@ export default function EquipmentAndFreight({equipment, freight}: EquipmentProps
             </div>
             <div className="flex flex-col gap-10 w-screen md:w-125 items-center bg-slate-400/50 dark:bg-slate-950 p-10 rounded-lg shadow-lg shadow-orange-800/50 border-2 border-orange-600/75">
                 <h3 className="text-5xl underline text-center text-orange-600">Freight Types</h3>
-                <ul className="self-start list-disc pl-10">
+                <ul className="self-start list-disc p-0 md:pl-10">
                     {freight.map((item, index) => {
                         return(
                             <li key={index}>{item}</li>

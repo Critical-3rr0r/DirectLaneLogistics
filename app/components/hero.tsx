@@ -41,7 +41,7 @@ toast.error(data.error)
       <div className="flex flex-col items-center h-full">
         <div className="flex flex-col md:flex-row gap-2 overflow-hidden w-full justify-center">
             <motion.h1 initial={{x: -1000}} animate={{x: 0}} transition={{duration: .5}} className="text-3xl text-center md:text-6xl font-bold">Flatbed <span className="text-orange-600">Dispatch</span></motion.h1>
-            <motion.h1 initial={{x: 1000}} animate={{x: 0}} transition={{duration: 1.5, delay: .75}} className="text-3xl text-center md:text-6xl font-bold">Built for <span className="text-orange-600">Steel Haulers</span></motion.h1>
+            <motion.h1 initial={{x: 1500}} animate={{x: 0}} transition={{duration: 1.5, delay: .75}} className="text-3xl text-center md:text-6xl font-bold">Built for <span className="text-orange-600">Steel Haulers</span></motion.h1>
         </div>
         
         <motion.p className="text-3xl text-center mt-5" initial={{opacity: 0}} animate={{opacity: 100}} transition={{duration: .75, delay: 1.5, ease: "easeInOut"}}>Secure <span className="underline font-bold text-orange-600">high paying loads</span> and <span className="underline font-bold text-orange-600">consistent lanes</span></motion.p>

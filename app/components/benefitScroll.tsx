@@ -31,7 +31,7 @@ export default function InfiniteScroll({ items }: { items: string[] }) {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full mask-x-from-95% mask-x-to-100%">
       <div
         ref={containerRef}
         className="flex whitespace-nowrap gap-10"

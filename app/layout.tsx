@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DirectLane Logistics",
-  description: "DirectLane Logistics LLC webpage",
+  title: "DirectLane Logistics | Flatbed Dispatch Services for Steel Haulers",
+  description: "DirectLane Logistics helps owner operators secure high paying flatbed loads, consistent lanes, and dedicated dispatch support.",
 };
 
 export default function RootLayout({

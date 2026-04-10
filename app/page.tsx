@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className="mt-15">
           <div className="absolute w-full h-50 -z-1">
-            <Image width={1500} height={150} src={"/images/Inspect.png"} alt="Truck Background" objectFit="cover" className="-z-1 w-full h-350 self-center mask-b-from-0% mask-b-to-75% mask-t-from-25% mask-t-to-100%"/>
+            <Image width={1500} height={150} src={"/images/Inspect.png"} alt="Man inspecting steel coils loaded on flatbed" objectFit="cover" className="-z-1 w-full h-350 self-center mask-b-from-0% mask-b-to-75% mask-t-from-25% mask-t-to-100%"/>
           </div>
 
           <EquipmentAndFreight equipment={equipment} freight={freight} />

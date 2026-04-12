@@ -54,12 +54,12 @@ export default function Home() {
         <div>
           <TrustCTA />
         </div>
-        <footer className="flex flex-row max-w-screen pl-10 pr-10 items-center justify-between h-25 ml-10 text-xl text-black/50 dark:text-white/50">
-          <h3>©DirectLane Logictics, LLC - 2026</h3>
+        <footer className="flex flex-row max-w-screen md:pl-10 md:pr-10 items-center justify-between h-25 ml-1 md:ml-10 text-sm md:text-xl text-black/50 dark:text-white/50">
+          <h3 className="text-xs md:text-lg">2026 ©DirectLane Logictics, LLC</h3>
           <div className="flex flex-col gap-2 text-center">
-            <p className="text-xl font-bold text-black/75 dark:text-white/75">Contact</p>
-            <ul className="flex flex-col text-lg text-black/50 dark:text-white/50">
-              <li><span className="select-none">Email - </span>Perry@directlanelogisticsllc.com</li>
+            <p className="text-xl font-bold text-black/75 dark:text-white/75">Contact Us!</p>
+            <ul className="flex flex-col text-sm md:text-lg text-black/50 dark:text-white/50">
+              <li>Perry@directlanelogisticsllc.com</li>
             </ul>
           </div>
         </footer>

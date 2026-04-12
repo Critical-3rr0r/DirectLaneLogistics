@@ -54,8 +54,14 @@ export default function Home() {
         <div>
           <TrustCTA />
         </div>
-        <footer className="flex flex-col justify-center h-25 ml-10 text-xl text-black/50 dark:text-white/50">
+        <footer className="flex flex-row max-w-screen pl-10 pr-10 items-center justify-between h-25 ml-10 text-xl text-black/50 dark:text-white/50">
           <h3>©DirectLane Logictics, LLC - 2026</h3>
+          <div className="flex flex-col gap-2 text-center">
+            <p className="text-xl font-bold text-black/75 dark:text-white/75">Contact</p>
+            <ul className="flex flex-col text-lg text-black/50 dark:text-white/50">
+              <li><span className="select-none">Email - </span>Perry@directlanelogisticsllc.com</li>
+            </ul>
+          </div>
         </footer>
       </div>
     </div>
